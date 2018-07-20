@@ -3,17 +3,20 @@ $color-primary: #9984d4;
 $color-primary-dark: #7e6dae;
 
 $color-black-1: #2a2827;
-$color-black-2: #33302f;
+$color-black-2: #444140;
 
-$color-gold: #f4be72;
+$color-editor-gold: #f4be72;
+$color-editor-black: #33302f;
 
-$color-grey-light-1: #f9f7f6;
+$color-grey-light-1: #fdfdfd;
 $color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #555;
 
 // FONT VARIABLES
 $font-primary: "Roboto", sans-serif;
 $font-secondary: "Josefin Sans", sans-serif;
-$font-terminal: "Roboto Mono", monospace;
+$font-editor: "Roboto Mono", monospace;
 
 // RESETS
 
@@ -35,4 +38,9 @@ body {
   color: $color-black-1;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }

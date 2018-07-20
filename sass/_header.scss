@@ -1,0 +1,71 @@
+.hero {
+  height: 60vh;
+  position: relative;
+  background: $color-grey-light-1;
+  color: $color-black-2;
+
+  header {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 35px;
+    width: 35px;
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  .nav__link {
+    &:link,
+    &:visited {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-black-2;
+      letter-spacing: 3px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      text-shadow: 0.5rem 1rem 2rem rgba($color-primary, 0.15);
+      color: $color-primary-dark;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--main {
+      font-family: $font-secondary;
+      font-size: 4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+    }
+
+    &--sub {
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-align: center;
+      color: $color-grey-dark-1;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
