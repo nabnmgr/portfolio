@@ -1,0 +1,44 @@
+// BUTTONS
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 1rem rgba($color-black-2, 0.1);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black-2, 0.2);
+  }
+
+  &--white {
+    color: $color-black-2;
+    border: 2px solid $color-primary-dark;
+
+    &:hover {
+      background: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &--purple {
+    color: $color-grey-light-1;
+    background: $color-primary-dark-2;
+
+    &:hover {
+      background: $color-primary;
+      color: #fff;
+    }
+  }
+}

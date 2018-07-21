@@ -1,18 +1,18 @@
 .projects {
   .project {
     display: flex;
+    margin-bottom: 6rem;
 
     &__img {
-      flex: 1;
-
+      max-width: 300px;
       img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
       }
     }
 
     &__info {
-      padding: 4rem;
+      padding: 0 0 2rem 4rem;
       color: $color-black-2;
       flex: 1;
       font-size: 1.4rem;
@@ -31,24 +31,14 @@
         span {
           display: inline-block;
           font-size: 1.3rem;
-          border: 2px solid $color-primary;
-          padding: 0.3rem 1.2rem;
+          border: 1px solid $color-grey-dark-1;
+          padding: 0.1rem 1.2rem;
           margin-top: 1rem;
-          margin-bottom: 2rem;
 
           &:not(:last-child) {
             margin-right: 0.6rem;
           }
         }
-      }
-
-      .button:link,
-      .button:visited {
-        text-decoration: none;
-        margin: 2rem 0;
-        color: $color-grey-light-1;
-        background: $color-primary-dark-2;
-        padding: 1rem 2rem;
       }
     }
   }
