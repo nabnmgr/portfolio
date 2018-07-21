@@ -1,0 +1,55 @@
+.projects {
+  .project {
+    display: flex;
+
+    &__img {
+      flex: 1;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__info {
+      padding: 4rem;
+      color: $color-black-2;
+      flex: 1;
+      font-size: 1.4rem;
+
+      &-head {
+        font-size: 2.4rem;
+
+        font-weight: 500;
+      }
+
+      &-detail {
+        margin: 1rem 0;
+      }
+
+      &-tags {
+        span {
+          display: inline-block;
+          font-size: 1.3rem;
+          border: 2px solid $color-primary;
+          padding: 0.3rem 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+
+          &:not(:last-child) {
+            margin-right: 0.6rem;
+          }
+        }
+      }
+
+      .button:link,
+      .button:visited {
+        text-decoration: none;
+        margin: 2rem 0;
+        color: $color-grey-light-1;
+        background: $color-primary-dark-2;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.about {
+  height: 40vh;
+  background: $color-primary;
+
+  &-section {
+    display: flex;
+    height: 100%;
+    box-shadow: 0 0 0.5rem rgba($color-black-1, 0.3);
+    color: $color-grey-light-2;
+  }
+
+  &__skills {
+    background: $color-editor-black;
+    flex: 0 0 200px;
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    background: $color-black-1;
+    padding: 4rem 6rem;
+    font-family: $font-editor;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span.highlight {
+      color: $color-editor-gold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// SKILLS
+.skills {
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    padding: 0.4rem 1rem;
+    background: $color-grey-dark-1;
+    color: $color-grey-light-1;
+
+    ion-icon {
+      transform: rotate(45deg);
+      font-size: 1.5rem;
+      margin-right: 0.3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 3.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0;
+    font-size: 1.3rem;
+
+    i {
+      font-size: 1.4rem;
+      margin-right: 0.8rem;
+    }
+  }
+}

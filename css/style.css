@@ -1,3 +1,57 @@
+.about {
+  height: 40vh;
+  background: #9984d4; }
+  .about-section {
+    display: flex;
+    height: 100%;
+    box-shadow: 0 0 0.5rem rgba(42, 40, 39, 0.3);
+    color: #cacaca; }
+  .about__skills {
+    background: #33302f;
+    flex: 0 0 200px;
+    font-size: 1.2rem; }
+  .about__description {
+    background: #2a2827;
+    padding: 4rem 6rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about__description span.highlight {
+      color: #f4be72;
+      text-transform: uppercase; }
+
+.skills__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  background: #555;
+  color: #fdfdfd; }
+  .skills__head ion-icon {
+    transform: rotate(45deg);
+    font-size: 1.5rem;
+    margin-right: 0.3rem; }
+  .skills__head p {
+    font-size: 1.3rem; }
+
+.skills__list {
+  list-style: none;
+  margin-left: 3.5rem; }
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0;
+  font-size: 1.3rem; }
+  .skills__item i {
+    font-size: 1.4rem;
+    margin-right: 0.8rem; }
+
 *,
 *::before,
 *::after {
@@ -12,6 +66,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: #2a2827;
+  background: #fdfdfd;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -19,10 +74,17 @@ body {
   max-width: 1100px;
   margin: 0 auto; }
 
+h1.section-heading {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 6rem 0;
+  text-align: center;
+  color: #444140; }
+
 .hero {
   height: 60vh;
   position: relative;
-  background: #fdfdfd;
   color: #444140; }
   .hero header {
     padding: 2rem 4rem;
@@ -36,13 +98,13 @@ body {
     display: flex;
     align-items: center; }
   .hero .nav__item:not(:last-child) {
-    margin-right: 5rem; }
+    margin-right: 4rem; }
   .hero .nav__link:link, .hero .nav__link:visited {
     font-size: 1.3rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #444140;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     transition: all 0.3s ease; }
   .hero .nav__link:hover, .hero .nav__link:active {
     text-shadow: 0.5rem 1rem 2rem rgba(153, 132, 212, 0.15);
@@ -57,7 +119,8 @@ body {
       font-size: 4rem;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.4rem; }
+      letter-spacing: 0.4rem;
+      color: #6f52c2; }
     .hero__text--sub {
       font-size: 1.8rem;
       font-weight: 400;
@@ -65,3 +128,37 @@ body {
       color: #555;
       text-transform: uppercase;
       letter-spacing: 0.2rem; }
+
+.projects .project {
+  display: flex; }
+  .projects .project__img {
+    flex: 1; }
+    .projects .project__img img {
+      max-width: 100%;
+      height: auto; }
+  .projects .project__info {
+    padding: 4rem;
+    color: #444140;
+    flex: 1;
+    font-size: 1.4rem; }
+    .projects .project__info-head {
+      font-size: 2.4rem;
+      font-weight: 500; }
+    .projects .project__info-detail {
+      margin: 1rem 0; }
+    .projects .project__info-tags span {
+      display: inline-block;
+      font-size: 1.3rem;
+      border: 2px solid #9984d4;
+      padding: 0.3rem 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+      .projects .project__info-tags span:not(:last-child) {
+        margin-right: 0.6rem; }
+    .projects .project__info .button:link,
+    .projects .project__info .button:visited {
+      text-decoration: none;
+      margin: 2rem 0;
+      color: #fdfdfd;
+      background: #6f52c2;
+      padding: 1rem 2rem; }
