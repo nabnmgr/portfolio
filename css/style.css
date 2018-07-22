@@ -84,15 +84,15 @@ h1.section-heading {
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
-  margin: 3rem 0;
   padding: 1rem 2rem;
   display: inline-block;
   letter-spacing: 1px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 1rem 1rem rgba(68, 65, 64, 0.1); }
+  transform: translateY(-2px); }
 
 .btn:active, .btn:focus {
   outline: none;
@@ -101,16 +101,18 @@ h1.section-heading {
 
 .btn--white {
   color: #444140;
-  border: 2px solid #7e6dae; }
+  border: 2px solid #9984d4; }
   .btn--white:hover {
     background: #9984d4;
     color: #fff; }
 
 .btn--purple {
   color: #fdfdfd;
-  background: #6f52c2; }
+  background: #6f52c2;
+  border: 2px solid #6f52c2; }
   .btn--purple:hover {
     background: #9984d4;
+    border-color: #9984d4;
     color: #fff; }
 
 .hero {
@@ -162,27 +164,41 @@ h1.section-heading {
 
 .projects .project {
   display: flex;
-  margin-bottom: 6rem; }
+  margin-bottom: 7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px; }
   .projects .project__img {
-    max-width: 300px; }
+    max-width: 420px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
     .projects .project__img img {
+      display: block;
       width: 100%;
-      height: auto; }
+      height: auto;
+      transition: all 0.3s ease-in-out;
+      backface-visibility: hidden; }
+      .projects .project__img img:hover {
+        transform: scale(1.12); }
   .projects .project__info {
-    padding: 0 0 2rem 4rem;
-    color: #444140;
+    padding: 1rem 1rem 1rem 3rem;
+    color: #555;
     flex: 1;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    background: #f7f5fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
     .projects .project__info-head {
       font-size: 2.4rem;
       font-weight: 500; }
     .projects .project__info-detail {
-      margin: 1rem 0; }
+      margin: 0.5rem 0; }
     .projects .project__info-tags span {
       display: inline-block;
       font-size: 1.3rem;
-      border: 1px solid #555;
+      border: 1px solid #aaa;
       padding: 0.1rem 1.2rem;
-      margin-top: 1rem; }
+      margin: 1rem 0 2rem 0; }
       .projects .project__info-tags span:not(:last-child) {
         margin-right: 0.6rem; }

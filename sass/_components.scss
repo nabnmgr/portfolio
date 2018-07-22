@@ -4,15 +4,16 @@
   &:link,
   &:visited {
     text-decoration: none;
-    margin: 3rem 0;
     padding: 1rem 2rem;
     display: inline-block;
     letter-spacing: 1px;
     transition: all 0.3s;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   }
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 1rem 1rem rgba($color-black-2, 0.1);
+    // box-shadow: 0 1rem 1rem rgba($color-black-2, 0.1);
   }
 
   &:active,
@@ -24,7 +25,7 @@
 
   &--white {
     color: $color-black-2;
-    border: 2px solid $color-primary-dark;
+    border: 2px solid $color-primary;
 
     &:hover {
       background: $color-primary;
@@ -35,9 +36,11 @@
   &--purple {
     color: $color-grey-light-1;
     background: $color-primary-dark-2;
+    border: 2px solid $color-primary-dark-2;
 
     &:hover {
       background: $color-primary;
+      border-color: $color-primary;
       color: #fff;
     }
   }
