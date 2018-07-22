@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: center;
 
+    p {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
     span.highlight {
       color: $color-editor-gold;
       text-transform: uppercase;
@@ -40,6 +44,7 @@
     margin-bottom: 0.4rem;
     font-weight: 500;
     text-transform: uppercase;
+    animation: fadeIn 0.5s ease-in-out;
 
     padding: 0.4rem 1rem;
     background: $color-grey-dark-1;
@@ -59,6 +64,7 @@
   &__list {
     list-style: none;
     margin-left: 3.5rem;
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   &__item {

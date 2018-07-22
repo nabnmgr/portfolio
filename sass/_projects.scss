@@ -11,6 +11,10 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
         0 2px 4px 0 rgba(0, 0, 0, 0.08);
 
+      // CHROME FLICKERING BUG FIX
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: perspective(1000px);
+
       img {
         display: block;
         width: 100%;
