@@ -11,6 +11,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
+  }
+
+  @media only screen and (max-width: $bp-tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50
+  }
 }
 
 body {
@@ -27,7 +35,6 @@ body {
 }
 
 // TYPOGRAPHY
-
 h1.section-heading {
   font-size: 3rem;
   font-weight: 400;

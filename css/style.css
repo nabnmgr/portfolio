@@ -1,5 +1,5 @@
 .about {
-  height: 40vh;
+  height: 50vh;
   background: #9984d4; }
   .about-section {
     display: flex;
@@ -10,6 +10,12 @@
     background: #33302f;
     flex: 0 0 200px;
     font-size: 1.2rem; }
+    @media only screen and (max-width: 900px) {
+      .about__skills {
+        flex: 0 0 160px; } }
+    @media only screen and (max-width: 650px) {
+      .about__skills {
+        flex: 0 0 100px; } }
   .about__description {
     background: #2a2827;
     padding: 4rem 6rem;
@@ -19,6 +25,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 650px) {
+      .about__description {
+        padding: 3rem 4rem;
+        line-height: 1.5; } }
     .about__description p {
       animation: fadeIn 0.5s ease-in-out; }
     .about__description span.highlight {
@@ -46,6 +56,9 @@
   list-style: none;
   margin-left: 3.5rem;
   animation: fadeIn 0.5s ease-in-out; }
+  @media only screen and (max-width: 650px) {
+    .skills__list {
+      margin-left: 2rem; } }
 
 .skills__item {
   display: flex;
@@ -80,6 +93,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 750px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -107,11 +126,11 @@ h1.section-heading {
   font-size: 1.4rem;
   letter-spacing: 1px;
   transition: all 0.3s;
-  border-radius: 2px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
+  border-radius: 2px; }
 
 .btn:hover {
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
 
 .btn:active, .btn:focus {
   outline: none;
@@ -160,7 +179,7 @@ h1.section-heading {
   font-size: 2rem; }
 
 .hero {
-  height: 60vh;
+  height: 50vh;
   position: relative;
   color: #444140;
   animation: fadeIn 0.8s ease-out; }
@@ -212,22 +231,42 @@ h1.section-heading {
   margin-bottom: 7rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   border-radius: 2px; }
+  @media only screen and (max-width: 650px) {
+    .projects .project {
+      flex-direction: column;
+      margin: 10rem; } }
   .projects .project__img {
+    background: #9984d4;
     max-width: 420px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     -webkit-backface-visibility: hidden;
     -webkit-transform: perspective(1000px); }
+    @media only screen and (max-width: 900px) {
+      .projects .project__img {
+        max-width: 400px; } }
+    @media only screen and (max-width: 750px) {
+      .projects .project__img {
+        max-width: 300px; } }
+    @media only screen and (max-width: 650px) {
+      .projects .project__img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; } }
     .projects .project__img img {
       display: block;
       width: 100%;
       height: auto;
       transition: all 0.3s ease-in-out;
       backface-visibility: hidden; }
+      @media only screen and (max-width: 650px) {
+        .projects .project__img img {
+          max-width: 80%; } }
       .projects .project__img img:hover {
         transform: scale(1.12); }
   .projects .project__info {
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 2rem 3rem;
     color: #555;
     flex: 1;
     font-size: 1.4rem;
@@ -236,16 +275,21 @@ h1.section-heading {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
+    @media only screen and (max-width: 650px) {
+      .projects .project__info {
+        padding: 3rem; } }
     .projects .project__info-head {
       font-size: 2.4rem;
       font-weight: 500; }
     .projects .project__info-detail {
       margin: 0.5rem 0; }
-    .projects .project__info-tags span {
-      display: inline-block;
-      font-size: 1.3rem;
-      border: 1px solid #aaa;
-      padding: 0.1rem 1.2rem;
-      margin: 1rem 0 2rem 0; }
-      .projects .project__info-tags span:not(:last-child) {
-        margin-right: 0.6rem; }
+    .projects .project__info-tags {
+      margin: 0.5rem 0 1.5rem 0; }
+      .projects .project__info-tags span {
+        display: inline-block;
+        font-size: 1.3rem;
+        border: 1px solid #aaa;
+        padding: 0.1rem 1.2rem;
+        margin: 0.5rem 0; }
+        .projects .project__info-tags span:not(:last-child) {
+          margin-right: 0.6rem; }
