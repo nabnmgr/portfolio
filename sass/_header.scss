@@ -1,18 +1,26 @@
-.hero {
-  height: 50vh;
-  position: relative;
-  color: $color-black-2;
-  animation: fadeIn 0.8s ease-out;
+.hero-section {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  header {
-    padding: 2rem 4rem;
-    display: flex;
-    justify-content: space-between;
+header {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 1rem 2rem;
   }
 
   .logo {
     height: 35px;
     width: 35px;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 28px;
+      width: 28px;
+    }
   }
 
   .nav {
@@ -44,13 +52,17 @@
       color: $color-primary-dark;
     }
   }
+}
+
+.hero {
+  margin: auto;
+  color: $color-black-2;
+  animation: fadeIn 0.8s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     &--main {
       font-family: $font-secondary;
       font-size: 4rem;
@@ -58,6 +70,10 @@
       text-transform: uppercase;
       letter-spacing: 0.4rem;
       color: $color-primary-dark-2;
+
+      @media only screen and (max-width: $bp-mobile-xs) {
+        font-size: 3rem;
+      }
     }
 
     &--sub {
@@ -67,6 +83,10 @@
       color: $color-grey-dark-1;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
+
+      @media only screen and (max-width: $bp-mobile-xs) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

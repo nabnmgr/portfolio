@@ -7,7 +7,11 @@
 
     @media only screen and (max-width: $bp-tab-small) {
       flex-direction: column;
-      margin: 10rem;
+      margin: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 7rem 2rem;
     }
 
     &__img {
@@ -44,7 +48,11 @@
         backface-visibility: hidden;
 
         @media only screen and (max-width: $bp-tab-small) {
-          max-width: 80%;
+          width: 90%;
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+          width: 100%;
         }
 
         &:hover {
@@ -66,6 +74,10 @@
 
       @media only screen and (max-width: $bp-tab-small) {
         padding: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile) {
+        padding: 2rem 2rem 3rem 2rem;
       }
 
       &-head {
