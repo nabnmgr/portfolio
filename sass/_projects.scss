@@ -1,7 +1,7 @@
 .projects {
   .project {
     display: flex;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     border-radius: 2px;
 
@@ -16,7 +16,7 @@
 
     &__img {
       background: $color-primary;
-      max-width: 420px;
+      max-width: 60%;
       overflow: hidden;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
         0 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -25,13 +25,13 @@
       -webkit-backface-visibility: hidden;
       -webkit-transform: perspective(1000px);
 
-      @media only screen and (max-width: $bp-tab-land) {
-        max-width: 400px;
-      }
+      // @media only screen and (max-width: $bp-tab-land) {
+      //   max-width: 60%;
+      // }
 
-      @media only screen and (max-width: $bp-tab-port) {
-        max-width: 300px;
-      }
+      // @media only screen and (max-width: $bp-tab-port) {
+      //   max-width: 60%;
+      // }
 
       @media only screen and (max-width: $bp-tab-small) {
         max-width: 100%;

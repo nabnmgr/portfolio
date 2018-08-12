@@ -288,7 +288,7 @@ header {
 
 .projects .project {
   display: flex;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   border-radius: 2px; }
   @media only screen and (max-width: 650px) {
@@ -300,17 +300,11 @@ header {
       margin: 7rem 3rem; } }
   .projects .project__img {
     background: #9984d4;
-    max-width: 420px;
+    max-width: 60%;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     -webkit-backface-visibility: hidden;
     -webkit-transform: perspective(1000px); }
-    @media only screen and (max-width: 900px) {
-      .projects .project__img {
-        max-width: 400px; } }
-    @media only screen and (max-width: 750px) {
-      .projects .project__img {
-        max-width: 300px; } }
     @media only screen and (max-width: 650px) {
       .projects .project__img {
         max-width: 100%;
